@@ -23,14 +23,14 @@
   <div id="reply">Waiting for response...</div>
 
   <script>
-    const API_KEY = "AQ.Ab8RN6Inw133Uy0578sutMtfHAC-BvvQD5Rm_f9VhtpqMoju7g";
+    const API_KEY = "AQ.Ab8RN6I3FBy_OAEfD5t3uUKHpDtacdEebH0-5wMTGI1VrjYOtQ";
 
     async function ask() {
       document.getElementById("reply").innerText = "PROCESSING...";
       document.getElementById("status").innerText = "CONNECTING...";
       try {
         const res = await fetch(
-          "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=" + API_KEY,
+          "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=" + API_KEY,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
